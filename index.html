@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>SUPERSALES card registation</h1>
+    </header>
+
+    <main>
+      <form>
+        <fieldset>
+          <legend>Personal data</legend>
+
+          <label>
+            Name:
+            <input type="text" name="name" placeholder="John" required />
+          </label>
+
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="johnthebest@gmail.com"
+              required
+            />
+          </label>
+
+          <label>
+            Birth date:
+            <input type="date" name="birthday" required />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sex</legend>
+
+          <label>
+            <input type="radio" name="gender" value="male" />
+            Male
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="female" />
+            Female
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="other" />
+            Other
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Additional</legend>
+
+          <label>
+            <input type="checkbox" name="isSubscribe" value="true" required />
+            I agree to the processing of personal data and private policy terms
+          </label>
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>Add your photo:</legend>
+
+          <img src="./assets/images/photography-icon-png-0.png" alt="photo">
+
+          <label>
+            <input type="file" name="photo" />
+          </label>
+        </fieldset>
+        <button type="submit">Confirm & Send</button>
+      </form>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="https://www.google.com/">Instagram</a></li>
+          <li><a href="https://www.google.com/">Telegram</a></li>
+          <li><a href="https://www.google.com/">Tiktok</a></li>
+          <li><a href="https://www.google.com/">Facebook</a></li>
+          <li><a href="https://www.google.com/">Twitter</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
