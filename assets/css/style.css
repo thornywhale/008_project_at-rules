@@ -1,13 +1,10 @@
 /* 
 !2. Розібратися з nav-меню.
 Його потрібно розтягнути на всю ширину ерану, щоб був красивий простір між посиланнями
-Виключити підкреслення посилань + змінити колір
-
-!!3. На власний розсуд використайте медіа-запити
 */
 
 :root {
-  background-image: url("../images/money.jpg") ;
+  background-image: url("../images/money.jpg");
   font-size: 12px;
 }
 body>{
@@ -42,6 +39,8 @@ fieldset{
   background-color: hsla(56, 100%, 50%, 0.247);
 }
 legend {
+  display: flex;
+  flex-direction: row;
   background-color: #000000;
   color: #fff;
   padding: 3px 6px;
@@ -52,6 +51,7 @@ label {
   align-items: flex-end;
   margin-bottom: 12px;
   font-weight: bold;
+  text-shadow: 0 -1px 8px #feffc6;
 }
 input {
   display: flex;
@@ -60,6 +60,10 @@ input {
 main>form:first-child>fieldset:nth-child(3)>label>input:last-child{
   width: 3em;
 }
+/* .checkboxes{
+  display: flex;
+  flex-direction: column;
+} */
 
 
 
@@ -86,7 +90,7 @@ main>form:last-child>fieldset{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 
@@ -95,9 +99,10 @@ main>form:last-child>fieldset{
 
 
 footer{
+  position: fixed;
+  bottom: 0;
   background-color: black;
-  display: flex;
-  justify-content: space-evenly;
+  border: 10px solid #b1b1b125;
 }
 ul {
   font-size: 0;
@@ -105,7 +110,7 @@ ul {
 li {
   display: inline;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(56, 56, 56, 0.562);
   border: #ffffff4f 4px groove;
   margin: 10px 2vw;
   font-size: 1.3rem;
@@ -124,10 +129,13 @@ a{
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 719px),(max-height:359px) {
   ul {
-      display: flex;
-      flex-direction: column;
-      align-items: safe;
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
   }
 }
