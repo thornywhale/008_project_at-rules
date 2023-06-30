@@ -103,9 +103,10 @@ main>form:last-child>fieldset{
 
 footer{
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  z-index: 2;
+  /* position: fixed;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
   text-align: center;
   background-color: black;
   border: 10px solid #b1b1b125;
@@ -138,6 +139,9 @@ a{
 
 
 @media screen and (max-width: 719px),(max-height:359px) {
+  footer{
+    margin-top: 20px;
+  }
   ul {
     display: flex;
     flex-direction: column;
